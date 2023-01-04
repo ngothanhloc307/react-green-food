@@ -1,0 +1,135 @@
+.nav {
+  display: flex;
+}
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 1rem;
+  flex-grow: 1;
+}
+
+.nav-center {
+  width: 100vw;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: space-between;
+}
+.header {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 1.5rem;
+  justify-content: center;
+}
+
+.nav-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-control {
+  display: none;
+}
+.logo {
+  width: 175px;
+  left: -15px;
+}
+
+.nav-toggle {
+  background: transparent;
+  border: transparent;
+  color: var(--clr-primary-5);
+  cursor: pointer;
+}
+
+.nav-toggle span i {
+  font-size: 3rem;
+}
+.nav-toggle span i:hover {
+  color: var(--clr-primary-7);
+}
+
+.nav-links {
+  display: none;
+}
+
+.nav-links .icon {
+  font-size: 0.5rem;
+}
+.cart-btn-wrapper {
+  display: none;
+}
+
+@media only screen and (min-width: 992px) {
+  .nav-toggle {
+    display: none;
+  }
+  .nav-center {
+    width: 100%;
+  }
+
+  .nav-center {
+    display: grid;
+    width: 100vw;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .form-control {
+    display: flex;
+    width: 80%;
+    margin: 0 1.5rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .search-input {
+    width: 100%;
+    background: var(--clr-grey-10);
+    border-radius: var(--radius);
+    border-color: transparent;
+    letter-spacing: var(--spacing);
+    outline: none;
+    background: transparent;
+    padding: 0.5rem;
+  }
+
+  .search-input::placeholder {
+    text-transform: capitalize;
+  }
+  .nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-links .icon {
+    font-size: 1.5rem;
+  }
+
+  .nav-links li {
+    margin: 0 0.5rem;
+  }
+  .nav-links a {
+    color: var(--clr-grey-3);
+    font-size: 1rem;
+    text-transform: capitalize;
+    letter-spacing: var(--spacing);
+    padding: 0.5rem;
+  }
+
+  .nav-links a:hover {
+    border-bottom: 2px solid var(--clr-primary-7);
+  }
+  .cart-btn-wrapper {
+    display: grid;
+  }
+}
