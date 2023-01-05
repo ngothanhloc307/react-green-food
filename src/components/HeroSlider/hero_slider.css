@@ -1,0 +1,160 @@
+.section {
+  margin: 0.5rem 0;
+  padding: 0.75rem 0.25rem;
+}
+.single-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius);
+}
+
+.slick-prev {
+  left: 0;
+  z-index: 10;
+}
+.slick-next {
+  right: 0;
+}
+
+.slider-body {
+  width: 100%;
+  height: 30rem;
+  position: relative;
+}
+.bg-slider {
+  width: 100%;
+  object-fit: cover;
+}
+
+.slider-main {
+  top: 0;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+}
+.slider-content {
+  display: flex;
+  flex-direction: column;
+}
+.slider_img {
+  display: flex;
+  right: 0;
+  bottom: 0;
+}
+.slider-img {
+  width: 650px;
+  height: auto;
+}
+
+.slider-content h1 {
+  font-size: 3.5rem;
+  color: #253d4e;
+  margin: 1.25rem 1rem;
+}
+
+.slider-content p {
+  font-size: 1.25rem;
+  color: #f7f7f7;
+  margin: 1rem 1.25rem;
+}
+
+.contact-form {
+  display: grid;
+  position: relative;
+  grid-template-columns: 1fr auto;
+  width: 50%;
+  margin: 5rem 3rem;
+  border: none;
+}
+
+.form-input,
+.submit-btn {
+  font-size: 1rem;
+  padding: 0.15rem 1rem;
+  border: none;
+  height: 150%;
+}
+.form-input {
+  border-right: none;
+  width: 100%;
+  color: var(--clr-grey-3);
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+.submit-btn {
+  border-radius: 50px;
+  margin-left: 1rem;
+  position: absolute;
+  right: -5rem;
+  background: #6d9886;
+  color: #fff;
+}
+
+@media only screen and (max-width: 992px) {
+  .contact-form {
+    width: 25vw;
+    margin: 2rem 1rem;
+  }
+  .slider-content h1 {
+    font-size: 2rem;
+  }
+  .slider-img {
+    width: 350px;
+    height: auto;
+  }
+  .slider-body {
+    height: 20rem;
+  }
+}
+
+@media only screen and (max-width: 1160px) {
+  .slider-content h1 {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .contact-form {
+    width: 70%;
+    margin: 1rem 0.75rem;
+  }
+  .slider-content h1 {
+    font-size: 1.5rem;
+  }
+  .slider-img {
+    width: 250px;
+    height: auto;
+  }
+  .slider-body {
+    height: 15rem;
+  }
+  .slick-prev,
+  .slick-next {
+    z-index: -99;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  .contact-form {
+    width: 70%;
+    margin: 0.25rem 0.25rem;
+  }
+  .slider-content h1 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .slider-content p {
+    font-size: 0.75rem;
+  }
+  .slider-img {
+    display: none !important;
+  }
+  .slider-body {
+    height: 12rem;
+  }
+  .slick-prev,
+  .slick-next {
+    z-index: -99;
+  }
+}

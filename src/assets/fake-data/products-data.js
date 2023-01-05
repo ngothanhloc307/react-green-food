@@ -1,3 +1,10 @@
+import Slider_1 from '../../assets/images/main/hero-slider-1.png';
+import Slider_2 from '../../assets/images/main/hero-slider-2.png';
+import Slider_3 from '../../assets/images/main/hero-slider-3.png';
+import Slider_4 from '../../assets/images/main/hero-slider-4.png';
+import Slider_5 from '../../assets/images/main/hero-slider-5.png';
+import BgSlider from '../../assets/images/main/slider_img.png';
+
 export const Products = [
   {
     id: '01',
@@ -84,5 +91,48 @@ export const Products = [
     ],
     description:
       'Its structure looks like squat celery, with either white or very pale green short, chunky stalks and glossy, deep green leaves. Pak Choy contains the mineral selenium, beta-carotene. The vegetable is a good supply of nutrients and is low in calories, it is well-suited to a healthful diet.',
+  },
+];
+
+export const sliders = [
+  {
+    id: '01',
+    title: 'We have simple and delicious food for you',
+    desc: 'Save up to 50% off on your first order',
+    imgUrl: Slider_1,
+    color: '#EDE4E0',
+    bgSlider: BgSlider,
+  },
+  {
+    id: '02',
+    title: `Don't miss amazing grocery deals`,
+    desc: 'Save up to 50% off on your first order',
+    imgUrl: Slider_2,
+    color: '#FF8787',
+    bgSlider: BgSlider,
+  },
+  {
+    id: '03',
+    title: 'We have simple and delicious food for you',
+    desc: 'Sign up for the daily newsletter',
+    imgUrl: Slider_3,
+    color: '#EB6440',
+    bgSlider: BgSlider,
+  },
+  {
+    id: '04',
+    title: 'We believe good food over great smile',
+    desc: 'Save up to 50% off on your first order',
+    imgUrl: Slider_4,
+    color: '#4E6C50',
+    bgSlider: BgSlider,
+  },
+  {
+    id: '05',
+    title: 'Meet, Eat and Enjoy the fesh fruit',
+    desc: 'Sign up for the daily newsletter',
+    imgUrl: Slider_5,
+    color: '#9E7676',
+    bgSlider: BgSlider,
   },
 ];

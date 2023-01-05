@@ -1,6 +1,6 @@
 .sidebar {
   display: flex;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   width: 100%;
@@ -12,10 +12,12 @@
   padding: 0px 0px;
   transition: var(--transition);
   transform: translate(100%);
+  z-index: 998;
 }
 
 .show-sidebar {
   transform: translate(0);
+  overflow: hidden;
   z-index: 999;
 }
 
@@ -51,6 +53,7 @@
 .links {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
   width: 100%;
   align-items: center;
   gap: 1rem;
