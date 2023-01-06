@@ -5,7 +5,7 @@ import Slider_4 from '../../assets/images/main/hero-slider-4.png';
 import Slider_5 from '../../assets/images/main/hero-slider-5.png';
 import BgSlider from '../../assets/images/main/slider_img.png';
 
-export const Products = [
+export const products = [
   {
     id: '01',
     title: 'Califia Farms - Unsweetened Better Half',
@@ -27,7 +27,7 @@ export const Products = [
     title: 'Aplenty, Olive and Rosemary Pita Chips',
     rating: 4,
     category: 'Snack',
-    price: 25,
+    price: 35,
     stock: 8,
     featured: true,
     imgUrl: [
@@ -76,7 +76,7 @@ export const Products = [
   },
   {
     id: '05',
-    title: 'Pak Choy',
+    title: 'Pak Choy Fresh',
     rating: 4,
     category: 'Vegetable',
     price: 25,

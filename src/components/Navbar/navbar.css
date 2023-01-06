@@ -1,5 +1,6 @@
 .nav {
   display: flex;
+  margin: 1rem;
 }
 .main {
   width: 100%;
@@ -18,6 +19,7 @@
   flex-grow: 1;
   align-items: center;
   justify-content: space-between;
+  padding: 1rem 1.5rem;
 }
 .header {
   height: 5rem;
@@ -109,6 +111,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 2rem 0.5rem;
   }
 
   .nav-links .icon {
@@ -116,6 +119,7 @@
   }
 
   .nav-links li {
+    display: flex;
     margin: 0 0.5rem;
   }
   .nav-links a {

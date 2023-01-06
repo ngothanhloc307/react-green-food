@@ -1,8 +1,13 @@
 import React from 'react';
+import Breadcrumb from '../../components/Breadcrumb/Breadcrumb';
 import './products.css';
 
 const Products = () => {
-  return <div>Products</div>;
+  return (
+    <main>
+      <Breadcrumb title='products' />
+    </main>
+  );
 };
 
 export default Products;

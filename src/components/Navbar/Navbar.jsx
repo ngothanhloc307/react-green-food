@@ -5,7 +5,7 @@ import Logo from '../../assets/images/main/logo.png';
 import { useProductsContext } from '../../context/products_context';
 
 const links = [
-  { title: 'Home', url: '/', icon: 'ri-map-pin-line' },
+  { title: 'Home', url: '/', icon: 'ri-home-line' },
   { title: 'About', url: '/about', icon: 'ri-map-pin-line' },
   { title: 'Products', url: '/products', icon: 'ri-store-line' },
   { title: 'Cart', url: '/cart', icon: 'ri-shopping-cart-line' },

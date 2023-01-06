@@ -1,12 +1,19 @@
 import React from 'react';
 import './home.css';
 import { HeroSlider } from '../../components';
+import FeaturedProducts from '../../components/FeaturedProducts/FeaturedProducts';
+import Recommend from '../../components/Recommend/Recommend';
+import Banner from '../../components/Banner/Banner';
+import Breadcrumb from '../../components/Breadcrumb/Breadcrumb';
 
 const Home = () => {
   return (
-    <div>
+    <>
       <HeroSlider />
-    </div>
+      <FeaturedProducts />
+      <Recommend />
+      <Banner />
+    </>
   );
 };
 

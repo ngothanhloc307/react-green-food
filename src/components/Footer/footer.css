@@ -2,6 +2,7 @@
   margin-bottom: 10px;
   background-color: #d7e9b9;
   color: #fefcf3;
+  padding: 1rem 1.5rem;
 }
 .footer-container {
   display: grid;
@@ -98,6 +99,6 @@
   .quick-link li,
   .links-title li,
   .footer-contact li {
-    font-size: 0.5rem;
+    font-size: 0.75rem;
   }
 }
