@@ -1,0 +1,17 @@
+.breadcrumb {
+  background: var(--clr-primary-10);
+  width: 100%;
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  color: var(--clr-primary-1);
+}
+
+.breadcrumb a {
+  color: var(--clr-primary-3);
+  padding: 0.5rem;
+  transition: var(--transition);
+}
+.breadcrumb a:hover {
+  color: var(--clr-primary-1);
+}

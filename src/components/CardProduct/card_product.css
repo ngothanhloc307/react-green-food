@@ -1,0 +1,123 @@
+.card {
+  margin: 0.25rem 1rem;
+  width: auto;
+}
+.card-container {
+  position: relative;
+  background: transparent;
+  border-radius: var(--radius);
+}
+
+.card-container:hover img {
+  opacity: 0.5;
+}
+img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: var(--radius);
+  transition: var(--transition);
+  margin: 0;
+  object-fit: cover;
+}
+.link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #a0c3d2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  transition: var(--transition);
+  opacity: 0;
+  cursor: pointer;
+}
+.link i {
+  color: var(--clr-white);
+}
+
+.card-container:hover .link {
+  opacity: 1;
+}
+
+.card-footer {
+  margin: 1rem 1rem;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1rem 0.25rem !important;
+  max-width: 100%;
+  min-height: 12rem;
+  border: none;
+  background: transparent;
+}
+.card-footer h5 {
+  font-size: 1.75rem;
+}
+.card-footer h5,
+.card-footer p {
+  margin-bottom: 0;
+  font-weight: 400;
+}
+
+.card-footer p {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  color: var(--clr-primary-5);
+  letter-spacing: var(--spacing);
+}
+
+.card-footer i {
+  color: #ffb900;
+}
+
+.cart {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+.cart btn {
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+}
+
+.btn-cart:hover {
+  background-color: var(--clr-grey-9);
+  color: var(--clr-primary-1);
+}
+
+@media (max-width: 992px) {
+  .card-footer {
+    min-width: 100%;
+  }
+  .card-footer h5 {
+    font-size: 3rem;
+  }
+  .card-footer p {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .card-footer {
+    max-height: 100%;
+  }
+  .card-footer h5 {
+    font-size: 2rem;
+  }
+  .card-footer p {
+    font-size: 2rem;
+  }
+
+  .btn-cart {
+    font-size: 0.75rem;
+  }
+}
