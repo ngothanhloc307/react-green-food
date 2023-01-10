@@ -1,0 +1,77 @@
+.sort {
+}
+
+.btn-container {
+  display: grid;
+  grid-template-columns: auto auto 1fr auto;
+  column-gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 2rem 0 0;
+  padding: 1rem 1rem;
+}
+.btn-container p {
+  min-width: 15%;
+}
+.btn-group {
+  display: grid;
+  grid-template-columns: repeat(2, 35px);
+  column-gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+}
+.btn {
+  display: flex !important;
+  border-radius: 5px !important;
+  align-items: center;
+  justify-content: center;
+}
+.btn-grid,
+.btn-list {
+  min-width: 100%;
+}
+.btn-list i,
+.btn-grid i {
+  max-width: 100%;
+  max-height: auto;
+  color: black;
+  outline: none;
+  margin: 0;
+}
+.active {
+  background: black !important;
+  color: white !important;
+}
+.active i {
+  color: white;
+}
+/* Select sort */
+.sort-container {
+  min-width: 50%;
+}
+
+.sort-title span {
+  margin: 0rem 2rem;
+}
+.sort-select {
+  border-radius: 5px;
+  border: 1px solid rgb(223, 216, 216);
+  padding: 0.5rem;
+  outline: none;
+  margin-left: 0.5rem;
+  box-shadow: 5px 5px 15px rgb(0 0 0 / 5%);
+}
+.sort-select select {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+@media (max-width: 768px) {
+  .btn-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,130 @@
+.container {
+  border: 1px solid #ececec;
+  box-shadow: 5px 5px 15px rgb(0 0 0 / 5%);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+.category-header {
+  color: var(--clr-primary-5);
+}
+
+.category-header h3 {
+  position: relative;
+  padding-bottom: 20px;
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+}
+.category-header h3::after {
+  content: '';
+  width: 20%;
+  height: 3px;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  background-color: var(--clr-primary-3);
+}
+
+.category-header hr {
+  width: 40%;
+  padding-top: 0px;
+  margin-top: 0;
+}
+.category-item {
+  display: grid;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-content: left;
+}
+.category-single {
+  margin-bottom: 1rem;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: transparent;
+}
+.category-single-1 {
+  width: 100%;
+  background: transparent;
+  margin: 1rem;
+  padding: 0.5rem 0.5rem;
+  border: 1px solid var(--clr-primary-5);
+  border-radius: var(--radius);
+}
+
+.category-single-1:hover {
+  background: var(--clr-primary-7);
+  cursor: pointer;
+  color: #fff;
+}
+
+.active1 {
+  background: var(--clr-primary-7);
+  color: #fff;
+}
+
+/* Filter Container */
+.filter {
+  display: grid;
+  width: 100%;
+  grid-template-rows: 1fr;
+  align-items: left;
+}
+.filter-header h3 {
+  position: relative;
+  padding-bottom: 20px;
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+  color: var(--clr-primary-5);
+}
+
+.filter-header h3::after {
+  content: '';
+  width: 20%;
+  height: 3px;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  background-color: var(--clr-primary-3);
+}
+
+.filter-header hr {
+  width: 40%;
+  padding-top: 0px;
+  margin-top: 0;
+}
+
+.filter-type .form-control {
+  margin-bottom: 1.25rem;
+}
+
+.filter-type .form-control h5 {
+  margin-bottom: 0.5rem;
+}
+
+.form-control .search-input {
+  padding: 0.5rem;
+  border-radius: var(--radius);
+  border-color: transparent;
+  letter-spacing: var(--spacing);
+}
+
+.form-control .search-input::placeholder {
+  text-transform: capitalize;
+}
+
+.type-price {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: none;
+}
+
+.type-price input {
+  accent-color: #3bb77e;
+}
+.form-control .price {
+  margin-bottom: 0.25rem;
+}
