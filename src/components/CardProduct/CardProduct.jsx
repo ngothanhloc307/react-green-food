@@ -13,13 +13,12 @@ const CardProduct = ({ product }) => {
         </Link>
       </div>
       <footer className='card-footer'>
-        <h5>{product.title}</h5>
-        <p>${product.price}</p>
-      </footer>
-      <div className='cart'>
+        <p className='category'>{product.category}</p>
+        <p className='card-title'>{product.title}</p>
+        <p className='price'>${product.price}</p>
         <Stars rating={product.rating} className='star' />
         <button className='btn btn-cart'>Add to cart</button>
-      </div>
+      </footer>
     </div>
   );
 };

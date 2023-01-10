@@ -1,5 +1,5 @@
-import React, { useContext, useReducer } from 'react';
-import { Products } from '../assets/fake-data/products-data.js';
+import React, { useContext, useEffect, useReducer } from 'react';
+import { products } from '../assets/fake-data/products-data.js';
 import reducer from '../reducers/products_reducer.js';
 import {
   SIDEBAR_OPEN,
@@ -17,7 +17,7 @@ const initialState = {
   isSidebarOpen: false,
   products_loading: false,
   products_error: false,
-  products: [],
+  product_all: [],
   single_products_loading: false,
   single_products_error: false,
   single_product: {},
@@ -35,12 +35,23 @@ export const ProductsProvider = ({ children }) => {
   const closeSidebar = () => {
     dispatch({ type: SIDEBAR_CLOSE });
   };
+
+  const fetchProducts = () => {
+    const product_all = products;
+    dispatch({ type: GET_PRODUCTS_SUCCESS, payload: products });
+  };
+
+  useEffect(() => {
+    fetchProducts();
+  }, []);
+
   return (
     <ProductsContext.Provider value={{ ...state, openSidebar, closeSidebar }}>
       {children}
     </ProductsContext.Provider>
   );
 };
+
 export const useProductsContext = () => {
   return useContext(ProductsContext);
 };

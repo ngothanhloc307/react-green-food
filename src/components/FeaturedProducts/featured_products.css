@@ -25,12 +25,4 @@
     width: 145px;
     height: auto;
   }
-
-  .featured-products h5 {
-    align-self: flex-end;
-    font-size: 1.2rem;
-  }
-  .featured-products p {
-    font-size: 1rem;
-  }
 }

@@ -41,14 +41,10 @@
 
 @media (max-width: 576px) {
   .recommend-products {
-    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
   .recommend-products img {
-    width: 70%;
-    max-height: 100%;
-    margin: 1rem auto;
-  }
-  .recommend-products h5 {
-    font-size: 2rem;
+    width: 145px;
+    height: auto;
   }
 }

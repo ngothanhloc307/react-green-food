@@ -1,0 +1,15 @@
+.products {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  margin: 1rem 1rem;
+}
+
+@media (max-width: 1170px) {
+  .products {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .category {
+    display: none;
+  }
+}

@@ -3,6 +3,7 @@ import './navbar.css';
 import { Link } from 'react-router-dom';
 import Logo from '../../assets/images/main/logo.png';
 import { useProductsContext } from '../../context/products_context';
+import { useFilterContext } from '../../context/filter_context';
 
 const links = [
   { title: 'Home', url: '/', icon: 'ri-home-line' },
@@ -12,6 +13,7 @@ const links = [
 ];
 
 export const Navbar = () => {
+  const { updateFilters } = useFilterContext();
   const { openSidebar } = useProductsContext();
 
   return (
@@ -29,7 +31,12 @@ export const Navbar = () => {
               <span>
                 <i className='ri-search-line'></i>
               </span>
-              <input type='text' placeholder='Search item...' className='search-input' />
+              <input
+                type='text'
+                placeholder='Search item...'
+                className='search-input'
+                name='text'
+              />
             </form>
 
             <div className='nav-links'>
