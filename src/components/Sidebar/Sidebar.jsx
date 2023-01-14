@@ -7,7 +7,6 @@ const links = [
   { title: 'Home', url: '/', icon: 'ri-home-line' },
   { title: 'About', url: '/about', icon: 'ri-map-pin-line' },
   { title: 'Products', url: '/products', icon: 'ri-store-line' },
-  { title: 'Cart', url: '/cart', icon: 'ri-shopping-cart-line' },
 ];
 
 const Sidebar = () => {
@@ -32,6 +31,13 @@ const Sidebar = () => {
               <Link to={link.url}>{link.title}</Link>
             </li>
           ))}
+          <li>
+            <span className='cart-container'>
+              <span className='cart-value__sidebar'>2</span>
+              <i className={`ri-shopping-cart-line icon`}></i>
+            </span>
+            <Link to='/cart'>Cart</Link>
+          </li>
         </ul>
       </div>
 

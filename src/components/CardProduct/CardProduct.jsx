@@ -2,13 +2,14 @@ import React from 'react';
 import './card_product.css';
 import { Link } from 'react-router-dom';
 import Stars from '../Stars/Stars';
+import { SingleProduct } from '../../pages';
 
 const CardProduct = ({ product }) => {
   return (
     <div className='card'>
       <div className='card-container'>
-        <img src={product.imgUrl[0]} alt='produdct-img' />
-        <Link to={`products/${product.id}`} className='link'>
+        <img src={product.images[0].url} alt='produdct-img' />
+        <Link to={`/product/${product.id}`} className='link'>
           <i className='ri-eye-line'></i>
         </Link>
       </div>

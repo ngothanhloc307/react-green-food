@@ -1,6 +1,5 @@
 import React from 'react';
 import './grid_products.css';
-
 import CardProduct from '../CardProduct/CardProduct';
 import { useFilterContext } from '../../context/filter_context';
 

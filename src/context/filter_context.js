@@ -42,6 +42,13 @@ export const FilterProviver = ({ children }) => {
     dispatch({ type: SORT_PRODUCTS });
   }, [product_all, state.sort, state.filters]);
 
+  const setGirdView = () => {
+    dispatch({ type: SET_GRIDVIEW });
+  };
+  const setListView = () => {
+    console.log('set list view');
+    dispatch({ type: SET_LISTVIEW });
+  };
   const updateSort = (e) => {
     // const name = e.target.name;
     const value = e.target.value;
@@ -61,7 +68,9 @@ export const FilterProviver = ({ children }) => {
   };
 
   return (
-    <FilterContext.Provider value={{ ...state, updateSort, updateFilters }}>
+    <FilterContext.Provider
+      value={{ ...state, updateSort, updateFilters, setGirdView, setListView }}
+    >
       {children}
     </FilterContext.Provider>
   );
