@@ -68,6 +68,27 @@
 .cart-btn-wrapper {
   display: none;
 }
+.cart-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.cart-value {
+  background: #eb455f;
+  position: absolute;
+  top: -1px;
+  right: -9px;
+  width: 11px;
+  height: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 0.75rem;
+  color: var(--clr-white);
+  padding: 10px;
+}
 
 @media only screen and (min-width: 992px) {
   .nav-toggle {

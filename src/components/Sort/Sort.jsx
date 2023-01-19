@@ -3,16 +3,34 @@ import { useFilterContext } from '../../context/filter_context';
 import './sort.css';
 
 const Sort = () => {
-  const { filtered_products: all_products, grid_view, sort, updateSort } = useFilterContext();
+  const btnClick = () => {
+    console.log('sdfd');
+  };
+  const {
+    filtered_products: all_products,
+    grid_view,
+    sort,
+    updateSort,
+    setGirdView,
+    setListView,
+  } = useFilterContext();
 
   return (
     <div className='sort'>
       <div className='btn-container'>
         <div className='btn-group'>
-          <button type='button' className={`${grid_view ? 'btn btn-grid active' : 'btn btn-grid'}`}>
+          <button
+            type='button'
+            className={`${grid_view ? 'btn btn-grid active' : 'btn btn-grid'}`}
+            onClick={setGirdView}
+          >
             <i className='ri-layout-grid-fill'></i>
           </button>
-          <button type='button' className={`${grid_view ? 'btn btn-list' : 'btn btn-list active'}`}>
+          <button
+            type='button'
+            className={`${!grid_view ? 'btn btn-list active' : 'btn btn-list'}`}
+            onClick={setListView}
+          >
             <i className='ri-list-check'></i>
           </button>
         </div>
